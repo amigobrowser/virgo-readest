@@ -32,6 +32,7 @@ export const getUserProfilePlan = (token: string): UserPlan => {
       plan = 'purchase';
     }
   }
+  plan = 'pro';
   return plan;
 };
 
@@ -45,7 +46,7 @@ export const getUserProfilePlan = (token: string): UserPlan => {
  * extension) stay open to free users — the gate is the personal email
  * inbox only.
  */
-export const EMAIL_IN_PLANS: readonly UserPlan[] = ['plus', 'pro', 'purchase'];
+export const EMAIL_IN_PLANS: readonly UserPlan[] = ['free', 'plus', 'pro', 'purchase'];
 
 export const isEmailInPlan = (plan: UserPlan, customizationPurchased: boolean): boolean =>
   isCustomizationAllowed(plan, customizationPurchased);
