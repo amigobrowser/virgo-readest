@@ -2,10 +2,7 @@ import { describe, it, expect, vi, beforeEach } from 'vitest';
 import { renderHook } from '@testing-library/react';
 
 // The entitlement caches are read synchronously by non-React gates
-// (`resolveCloudSyncGate`), so a sign-out that fails to clear them leaves the
-// previous account looking premium. This exercises the real logout path in
-// `useQuotaStats` rather than calling the setters directly, so deleting the
-// cleanup fails the test.
+// (`resolveCloudSyncGate`), so this exercises the plan reset on sign-out.
 
 const auth = vi.hoisted(() => ({ token: null as string | null, user: null as unknown }));
 vi.mock('@/context/AuthContext', () => ({ useAuth: () => auth }));
@@ -21,7 +18,7 @@ vi.mock('@/hooks/useTranslation', () => ({ useTranslation: () => (s: string) => 
 vi.mock('@/utils/access', () => ({
   getStoragePlanData: () => ({ plan: 'free', usage: 0, quota: 1000 }),
   getTranslationPlanData: () => ({ plan: 'free', usage: 0, quota: 1000 }),
-  getUserProfilePlan: () => 'purchase',
+  getUserProfilePlan: (token: string | null) => (token ? 'purchase' : 'pro'),
   getCustomizationPurchased: () => true,
 }));
 
@@ -32,7 +29,7 @@ beforeEach(() => {
   cache.setCachedCustomizationPurchased.mockReset();
 });
 
-describe('useQuotaStats — sign-out clears the entitlement caches', () => {
+describe('useQuotaStats — sign-out resets the entitlement caches', () => {
   it('caches the entitlement while signed in', () => {
     auth.token = 'a-token';
     auth.user = { id: 'user-1' };
@@ -43,7 +40,7 @@ describe('useQuotaStats — sign-out clears the entitlement caches', () => {
     expect(cache.setCachedCustomizationPurchased).toHaveBeenLastCalledWith(true);
   });
 
-  it('clears both caches when the session goes away', () => {
+  it('resolves the plan to pro and clears the customization cache when the session goes away', () => {
     auth.token = 'a-token';
     auth.user = { id: 'user-1' };
     const { rerender, result } = renderHook(() => useQuotaStats());
@@ -54,7 +51,8 @@ describe('useQuotaStats — sign-out clears the entitlement caches', () => {
     rerender();
 
     expect(cache.setCachedCustomizationPurchased).toHaveBeenLastCalledWith(false);
-    expect(cache.setCachedUserPlan).toHaveBeenLastCalledWith(undefined);
+    expect(cache.setCachedUserPlan).toHaveBeenLastCalledWith('pro');
+    expect(result.current.userProfilePlan).toBe('pro');
     // Derived from the token, so the rendered value flips in the same pass
     // rather than a render later.
     expect(result.current.customizationPurchased).toBe(false);

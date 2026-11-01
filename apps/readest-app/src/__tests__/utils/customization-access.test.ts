@@ -2,6 +2,7 @@ import { describe, it, expect, vi, afterEach } from 'vitest';
 import { jwtDecode } from 'jwt-decode';
 import {
   getCustomizationPurchased,
+  getUserProfilePlan,
   isCustomizationAllowed,
   isCustomTranslatorAllowed,
   isSelfHosted,
@@ -13,6 +14,19 @@ const mockToken = (claims: Record<string, unknown>) => {
   (jwtDecode as unknown as ReturnType<typeof vi.fn>).mockReturnValue(claims);
   return 'token';
 };
+
+describe('getUserProfilePlan', () => {
+  it('returns pro when there is no logged-in token', () => {
+    expect(getUserProfilePlan(null)).toBe('pro');
+    expect(getUserProfilePlan(undefined)).toBe('pro');
+  });
+
+  it('uses the logged-in user plan and storage purchase', () => {
+    expect(getUserProfilePlan(mockToken({ plan: 'free' }))).toBe('free');
+    expect(getUserProfilePlan(mockToken({ plan: 'plus' }))).toBe('plus');
+    expect(getUserProfilePlan(mockToken({ storage_purchased_bytes: 1e9 }))).toBe('purchase');
+  });
+});
 
 describe('getCustomizationPurchased', () => {
   it('reads the claim minted by custom_access_token_hook', () => {

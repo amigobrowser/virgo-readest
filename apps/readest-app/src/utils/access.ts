@@ -23,7 +23,11 @@ export const getSubscriptionPlan = (token: string): UserPlan => {
   return data['plan'] || 'free';
 };
 
-export const getUserProfilePlan = (token: string): UserPlan => {
+export const getUserProfilePlan = (token: string | null | undefined): UserPlan => {
+  if (!token) {
+    return 'pro';
+  }
+
   const data = jwtDecode<Token>(token) || {};
   let plan = data['plan'] || 'free';
   if (plan === 'free') {
@@ -32,7 +36,6 @@ export const getUserProfilePlan = (token: string): UserPlan => {
       plan = 'purchase';
     }
   }
-  plan = 'pro';
   return plan;
 };
 

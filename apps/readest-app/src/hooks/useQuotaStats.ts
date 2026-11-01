@@ -28,13 +28,11 @@ export const useQuotaStats = (briefName = false) => {
 
   useEffect(() => {
     if (!user || !token) {
-      // Signing out must clear the module-level caches. They are read
-      // synchronously by non-React gates, so a stale entitlement would leave a
-      // signed-out session looking premium. Falling back to the restrictive
-      // side matches how these caches are documented to behave before the
-      // first auth resolution.
-      setUserProfilePlan(undefined);
-      setCachedUserPlan(undefined);
+      // Signed-out sessions resolve to Pro, including for synchronous gates
+      // that read the module-level cache.
+      const profilePlan = getUserProfilePlan(null);
+      setUserProfilePlan(profilePlan);
+      setCachedUserPlan(profilePlan);
       setCachedCustomizationPurchased(false);
       return;
     }
@@ -80,7 +78,7 @@ export const useQuotaStats = (briefName = false) => {
 
   return {
     quotas,
-    userProfilePlan,
+    userProfilePlan: user && token ? userProfilePlan : 'pro',
     customizationPurchased,
   };
 };
