@@ -3,6 +3,7 @@ import { jwtDecode } from 'jwt-decode';
 import {
   getCustomizationPurchased,
   isAnkiAllowed,
+  getUserProfilePlan,
   isCustomizationAllowed,
   isCustomTranslatorAllowed,
   isSelfHosted,
