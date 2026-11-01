@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/config.schema.json",
-  "productName": "Readest",
+  "productName": "Virgo Readest",
   "mainBinaryName": "readest",
-  "identifier": "com.bilingify.readest",
+  "identifier": "com.amigobrowser.readest.virgo",
   "version": "../package.json",
   "build": {
     "frontendDist": "../out",

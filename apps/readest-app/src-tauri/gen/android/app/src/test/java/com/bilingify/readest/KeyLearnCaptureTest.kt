@@ -1,4 +1,4 @@
-package com.bilingify.readest
+package com.amigobrowser.readest.virgo
 
 import android.view.KeyEvent
 import org.junit.Assert.assertFalse
