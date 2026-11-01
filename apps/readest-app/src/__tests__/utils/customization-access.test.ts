@@ -3,7 +3,7 @@ import { describe, it, expect, vi, afterEach } from 'vitest';
 import { jwtDecode } from 'jwt-decode';
 import {
   getCustomizationPurchased,
-  isAnkiAllowed,
+  getUserProfilePlan,
   isCustomizationAllowed,
   isCustomTranslatorAllowed,
   isSelfHosted,
