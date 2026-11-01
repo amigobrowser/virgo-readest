@@ -193,14 +193,15 @@ export const isCustomizationAllowed = (plan: UserPlan, customizationPurchased: b
 
 /**
  * Custom translators (the user's own OpenAI-compatible LLM or DeepL key) are a
- * premium feature. Requests go straight from the device, so this is a
- * client-side gate, like the TTS cache. It reads the session token directly so
- * a reader window never sees a premium user as free while the plan loads.
+ * local premium feature. Requests go straight from the device, so no account
+ * is needed to use them; signed-out sessions resolve to Pro, like in
+ * `useQuotaStats`.
  */
 export const isCustomTranslatorAllowed = (token: string | null | undefined): boolean =>
-  token
-    ? isCustomizationAllowed(getUserProfilePlan(token), getCustomizationPurchased(token))
-    : isSelfHosted();
+  isCustomizationAllowed(
+    getUserProfilePlan(token),
+    token ? getCustomizationPurchased(token) : false,
+  );
 
 /**
  * Custom TTS services (the user's own OpenAI-compatible speech endpoint) are

@@ -90,9 +90,8 @@ describe('self-hosted deployments', () => {
   });
 });
 
-// Custom translators (the user's own LLM endpoint or DeepL key) are premium.
-// The reader decides from the session token alone, so a signed-out reader is
-// locked unless the deployment is self-hosted.
+// Custom translators (the user's own LLM endpoint or DeepL key) run locally
+// with the user's own credentials, so they do not require an account.
 describe('isCustomTranslatorAllowed', () => {
   afterEach(() => {
     vi.unstubAllEnvs();
@@ -113,8 +112,9 @@ describe('isCustomTranslatorAllowed', () => {
     ).toBe(false);
   });
 
-  it('denies a signed-out reader', () => {
-    expect(isCustomTranslatorAllowed(null)).toBe(false);
+  it('allows a signed-out reader under the default Pro entitlement', () => {
+    expect(isCustomTranslatorAllowed(null)).toBe(true);
+    expect(isCustomTranslatorAllowed(undefined)).toBe(true);
   });
 
   it('allows a signed-out reader on a self-hosted deployment', () => {
