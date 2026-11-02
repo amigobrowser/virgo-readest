@@ -17,7 +17,11 @@ metadata:
 **Investigation recipe:** `scripts/db/inspect-accounts.mjs <email>` (its `files` listing is capped at 1000, so "N objects have no live files row" can be an artifact; recount with paging). Group `files.file_key` by `split('/')[3]` (the hash) and diff against `books.book_hash`. The Supabase Management API `logs.all` endpoint is REMOVED (use `/analytics/endpoints/logs` with a unified `logs` table + `log_attributes['...']`), and that endpoint returned "Backend error" for every query on 2026-09-29.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 **Compensation grants:** never hand-edit `plans.storage_purchased_bytes`; `updateUserStorage` recomputes it from completed `payments` rows on every purchase or refund and would erase it. Insert `provider='readest'`, `product_id='com.amigobrowser.readest.virgo.storage.<N>gb.compensation'` (must NOT contain "customization"), `storage_gb=N`, `status='completed'`, `metadata={manual_grant:true, reason, granted_at}`, then recompute the sum the same way. Related: [[storage-customization-entitlement-split]], [[storage-purchase-account-transfer]], [[account-merge-recipe]].
 =======
 **Compensation grants:** recipe in [[private-upload-without-books-sync-orphan-files]] (local only). Related: [[private-storage-customization-entitlement-split]], [[private-storage-purchase-account-transfer]], [[account-merge-recipe]].
 >>>>>>> 414846019 (chore(agent): update memories (#7295))
+=======
+**Compensation grants:** never hand-edit `plans.storage_purchased_bytes`; `updateUserStorage` recomputes it from completed `payments` rows on every purchase or refund and would erase it. Insert `provider='readest'`, `product_id='com.amigobrowser.readest.virgo.storage.<N>gb.compensation'` (must NOT contain "customization"), `storage_gb=N`, `status='completed'`, `metadata={manual_grant:true, reason, granted_at}`, then recompute the sum the same way. Related: [[storage-customization-entitlement-split]], [[storage-purchase-account-transfer]], [[account-merge-recipe]].
+>>>>>>> 6a34bb3ff (update readmes)

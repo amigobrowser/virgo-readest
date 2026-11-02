@@ -3,10 +3,8 @@
     <img src="https://github.com/readest/readest/blob/main/apps/readest-app/src-tauri/icons/icon.png?raw=true" alt="Readest Logo" width="20%" />
   </a>
   <h1>Virgo Readest</h1>
-  <h1>Virgo Readest</h1>
   <br>
 
-Virgo Readest is my personal fork of readest, that unlocks all local premium features for free. As i only use it on android, i compile it only for android. If you want it for other platforms, compile it yourself.
 Virgo Readest is my personal fork of readest, that unlocks all local premium features for free. As i only use it on android, i compile it only for android. If you want it for other platforms, compile it yourself.
 
 [![OS][badge-platforms]][link-website]
@@ -39,7 +37,6 @@ Virgo Readest is my personal fork of readest, that unlocks all local premium fea
 </div>
 
 ## Base readest features
-## Base readest features
 
 
 | **Feature**                                | **Description**                                                                                                        |
@@ -50,7 +47,6 @@ Virgo Readest is my personal fork of readest, that unlocks all local premium fea
 | **Annotations and Highlighting**           | Add highlights, bookmarks, and notes to enhance your reading experience and use instant mode for quicker interactions. |
 | **Dictionary/Wikipedia Lookup**            | Look up words with built-in sources or import local packs, including Yomitan ZIP/RDICT, from Settings → Custom Dictionaries. |
 | **Parallel Read**    | Read two books or documents simultaneously in a split-screen view.                                                     |
-| **Parallel Read**    | Read two books or documents simultaneously in a split-screen view.                                                     |
 | **Customize Font and Layout**              | Adjust font, layout, theme mode, and theme colors for a personalized experience.                                       |
 | **Code Syntax Highlighting**               | Read software manuals with rich coloring of code examples.                                                             |
 | **File Association and Open With**         | Quickly open files in Readest in your file browser with one-click.                                                     |
@@ -60,7 +56,6 @@ Virgo Readest is my personal fork of readest, that unlocks all local premium fea
 | **Translate with DeepL and Yandex**        | From a single sentence to the entire book—translate instantly.                                                         |
 | **Audiobook Support**                      | Extend functionality to play and manage audiobooks.                                                        |
 | **Text-to-Speech (TTS) Support**           | Enjoy smooth, multilingual narration—even within a single book.                                                        |
-| **Read-Along Narration** | Play embedded EPUB 3 Media Overlays with timed highlighting, or pair a reflowable EPUB locally with DRM-free MP3, M4A, or M4B narration. [Storyteller][link-storyteller] remains an option for generating phrase-aligned EPUBs. |
 | **Read-Along Narration** | Play embedded EPUB 3 Media Overlays with timed highlighting, or pair a reflowable EPUB locally with DRM-free MP3, M4A, or M4B narration. [Storyteller][link-storyteller] remains an option for generating phrase-aligned EPUBs. |
 | **Sync across Platforms**                  | Synchronize book files, reading progress, notes, and bookmarks across all supported platforms.                         |
 | [**Sync with Koreader**][link-kosync-wiki] | Synchronize reading progress, notes, and bookmarks with [Koreader][link-koreader] devices.                             |
@@ -98,8 +93,6 @@ Stay tuned for continuous improvements and updates! Contributions and suggestion
 ## Downloads
 
 ### Mobile Apps
-
-Virgo Readest is not currently published in any stores. you should download it from this repo.
 
 Virgo Readest is not currently published in any stores. you should download it from this repo.
 
@@ -145,7 +138,6 @@ nix.settings = {
 ```
 
 ## Base readest documentation
-## Base readest documentation
 
 Guides, tutorials, and FAQs for installing and using Readest live in the official documentation:
 
@@ -158,11 +150,9 @@ Contributor references live in the repository: [architecture](./apps/readest-app
 ## Building from Source
 
 To build Virgo Readest from the latest commit, see [Getting Started](./CONTRIBUTING.md#getting-started).
-To build Virgo Readest from the latest commit, see [Getting Started](./CONTRIBUTING.md#getting-started).
 
 ## Troubleshooting
 
-### 1. Virgo Readest Won’t Launch on Windows (Missing Edge WebView2 Runtime)
 ### 1. Virgo Readest Won’t Launch on Windows (Missing Edge WebView2 Runtime)
 
 **Symptom**
@@ -208,7 +198,6 @@ From a terminal in that session, check `printenv DISPLAY`, then launch Readest:
 
 ```sh
 flatpak run com.amigobrowser.readest.virgo
-flatpak run com.amigobrowser.readest.virgo
 ```
 
 The Flatpak already requests the X11 socket. If you have customized its sandbox
@@ -222,9 +211,7 @@ and WebKitGTK environment variables do not affect CEF.
 Readest is open-source, and contributions are welcome! Feel free to open issues, suggest features, or submit pull requests. Please **review our [contributing guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before you start**. We also welcome you to join our [Discord][link-discord] community for either support or contributing guidance.
 
 <a href="https://github.com/amigobrowser/virgo-readest/graphs/contributors">
-<a href="https://github.com/amigobrowser/virgo-readest/graphs/contributors">
   <p align="left">
-    <img width="500" src="https://contrib.rocks/image?repo=amigobrowser/virgo-readest" alt="A table of avatars from the project's contributors" />
     <img width="500" src="https://contrib.rocks/image?repo=amigobrowser/virgo-readest" alt="A table of avatars from the project's contributors" />
   </p>
 </a>
@@ -278,11 +265,7 @@ We would also like to thank the [Web Chinese Fonts Plan](https://chinese-font.ne
 [link-gh-releases]: https://github.com/amigobrowser/virgo-readest/releases
 [link-gh-commits]: https://github.com/amigobrowser/virgo-readest/commits/main
 [link-gh-pulse]: https://github.com/amigobrowser/virgo-readest/pulse
-[link-gh-releases]: https://github.com/amigobrowser/virgo-readest/releases
-[link-gh-commits]: https://github.com/amigobrowser/virgo-readest/commits/main
-[link-gh-pulse]: https://github.com/amigobrowser/virgo-readest/pulse
 [link-gh-wiki]: https://github.com/readest/readest/wiki
-[link-discord]: need to put invite here later
 [link-discord]: need to put invite here later
 [link-parallel-read]: https://readest.com/#parallel-read
 [link-koreader]: https://github.com/koreader/koreader
