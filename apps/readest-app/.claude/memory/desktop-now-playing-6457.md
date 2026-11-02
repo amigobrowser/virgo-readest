@@ -41,6 +41,6 @@ keep-alive with TTS (web media-session path).
 stops (looked like "t does nothing"). Clicking near the TTS bar turns pages
 and moves the saved reading position. Webview console isn't in the app log;
 temporarily forward `console.*` via `invoke('plugin:log|log', {level,
-message})` to `~/Library/Logs/com.bilingify.readest/Readest.log`. Hardware
+message})` to `~/Library/Logs/com.amigobrowser.readest.virgo/Readest.log`. Hardware
 media key on macOS: post an NX_KEYTYPE_PLAY (16) systemDefined NSEvent from
 a tiny Swift binary. Uses [[computer-use-tauri-dev-binary-no-bundle-id]].

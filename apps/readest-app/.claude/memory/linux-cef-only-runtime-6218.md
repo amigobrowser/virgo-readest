@@ -13,7 +13,7 @@ commit `8a500d0e1`. **MERGED 2026-09-16 as `95117b03f`, UNRELEASED.** Closes
 build` -> scripts/tauri.mjs forces CEF for dev/build/bundle (release.yml,
 nightly.yml, try-appimage.yml all use it), nix/package.nix sets
 `buildFeatures = ["cef"]`, Arch `extra` builds with the CEF CLI, and **Flathub
-switched in flathub/com.bilingify.readest#33 (2026-09-06), shipping CEF from
+switched in flathub/com.amigobrowser.readest.virgo#33 (2026-09-06), shipping CEF from
 0.12.8 on**. So any `isLinuxCefRuntime(navigator.userAgent)` probe answers the
 same way always — it was written in #6074 while `tauri:cef` was still opt-in,
 and went stale inside that same PR when CEF became the Linux default.

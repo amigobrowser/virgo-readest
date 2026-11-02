@@ -38,24 +38,24 @@ describe('verifyApplePurchaseProducts', () => {
     const purchases: IAPPurchase[] = [
       {
         platform: 'ios',
-        productId: 'com.bilingify.readest.storage.1gb.purchase',
+        productId: 'com.amigobrowser.readest.virgo.storage.1gb.purchase',
         transactionId: '450003083195506',
         originalTransactionId: '450003083195506',
         purchaseDate,
       },
       {
         platform: 'ios',
-        productId: 'com.bilingify.readest.plus.monthly',
+        productId: 'com.amigobrowser.readest.virgo.plus.monthly',
         transactionId: 't2',
         originalTransactionId: 't2',
         purchaseDate,
       },
       {
         platform: 'android',
-        productId: 'com.bilingify.readest.purchase.storage.1gb',
+        productId: 'com.amigobrowser.readest.virgo.purchase.storage.1gb',
         orderId: 'GPA.1',
         purchaseToken: 'tok-1',
-        packageName: 'com.bilingify.readest',
+        packageName: 'com.amigobrowser.readest.virgo',
         purchaseDate,
       },
     ];
@@ -79,7 +79,7 @@ describe('verifyApplePurchaseProducts', () => {
     await verifyApplePurchaseProducts([
       {
         platform: 'ios',
-        productId: 'com.bilingify.readest.plus.monthly',
+        productId: 'com.amigobrowser.readest.virgo.plus.monthly',
         transactionId: 't2',
         originalTransactionId: 't2',
         purchaseDate,

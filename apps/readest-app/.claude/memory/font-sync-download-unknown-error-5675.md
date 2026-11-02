@@ -38,6 +38,6 @@ Issue #5675 (Android 0.12.1, Russian user, lifetime license). Screenshot = Trans
 
 **Also spotted (unrelated but real):** `useCustomFontStore.findByContentId` does NOT filter `deletedAt`, while the persisted fallback in `findFontByContentId` DOES — a soft-deleted local font shadows an alive remote row, so a delete-then-reimport on device A never revives on device B.
 
-**Device probe note:** the connected Xiaomi fuxi (368b0948) runs a RELEASE 0.12.1 — `webview_devtools_remote_<pid>` socket exists but does not serve CDP, `run-as` refused (`package not debuggable`), no root, `/sdcard/Android/data/com.bilingify.readest/files` empty. On-device inspection needs the `pnpm dev-android` devtools build (see [[download-file-scope-android-regression]]).
+**Device probe note:** the connected Xiaomi fuxi (368b0948) runs a RELEASE 0.12.1 — `webview_devtools_remote_<pid>` socket exists but does not serve CDP, `run-as` refused (`package not debuggable`), no root, `/sdcard/Android/data/com.amigobrowser.readest.virgo/files` empty. On-device inspection needs the `pnpm dev-android` devtools build (see [[download-file-scope-android-regression]]).
 
 Related: [[in-place-delete-wiped-originals]] for the fs-scope history, [[download-file-scope-android-regression]] for `ensure_path_allowed`.

@@ -34,8 +34,8 @@ vi.mock('@/libs/payment/iap/google/server', () => ({
 import { POST } from '@/app/api/google/iap-verify/route';
 
 const verifyParams = {
-  packageName: 'com.bilingify.readest',
-  productId: 'com.bilingify.readest.purchase.storage.1gb',
+  packageName: 'com.amigobrowser.readest.virgo',
+  productId: 'com.amigobrowser.readest.virgo.purchase.storage.1gb',
   orderId: 'GPA.1111-2222-3333-44444',
   purchaseToken: 'storage-token-1',
 };
@@ -145,7 +145,7 @@ describe('/api/google/iap-verify consumption', () => {
 
     const response = await postVerify({
       ...verifyParams,
-      productId: 'com.bilingify.readest.plus.monthly',
+      productId: 'com.amigobrowser.readest.virgo.plus.monthly',
     });
 
     expect(response.status).toBe(200);
@@ -160,7 +160,7 @@ describe('/api/google/iap-verify consumption', () => {
 describe('/api/google/iap-verify permanent unlocks', () => {
   const unlockParams = {
     ...verifyParams,
-    productId: 'com.bilingify.readest.customization.purchase',
+    productId: 'com.amigobrowser.readest.virgo.customization.purchase',
     purchaseToken: 'customization-token-1',
   };
 

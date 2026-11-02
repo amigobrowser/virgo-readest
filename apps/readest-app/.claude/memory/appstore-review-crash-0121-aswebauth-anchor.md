@@ -15,7 +15,7 @@ processHandle` in `__85-[_UIRemoteViewControllerSceneHostingImpl
 _viewServiceHostSessionDidConnectToClient:]_block_invoke`.
 
 **How to spot Apple's review device in Sentry** (reusable): filter
-`release:"com.bilingify.readest@<ver>+<ver>"` before public rollout — a build still in
+`release:"com.amigobrowser.readest.virgo@<ver>+<ver>"` before public rollout — a build still in
 review has ~1 event, and it is the reviewer. Confirmers on this one: `os.build 23G71`
 iOS 26.6 whose `kernel_version` says **`xnu_development ... DEVELOPMENT_ARM64_T8140`** —
 a development kernel is an Apple-internal build, not something a normal user runs. Plus

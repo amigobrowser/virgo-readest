@@ -16,7 +16,7 @@ occupies the first slots and yearly follows, which is the ordering that keeps
 clients <= 0.9.67 on the price they have always been shown.
 
 **The mobile SKUs still do not exist** — chrox creates them. Shape agreed:
-standalone `com.bilingify.readest.yearly.plus` / `.pro`, Apple in the **same
+standalone `com.amigobrowser.readest.virgo.yearly.plus` / `.pro`, Apple in the **same
 subscription group** as monthly (free crossgrade, Apple handles proration), Play
 as separate subscription ids (NOT base plans, which would need offer-token work
 in BillingManager).

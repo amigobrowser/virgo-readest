@@ -46,7 +46,7 @@ event loop, not hung.
 
 ## Confirming experiment (done, verified)
 Removed `customRootDir` from
-`~/Library/Containers/com.bilingify.readest/Data/Library/Application Support/com.bilingify.readest/settings.json`,
+`~/Library/Containers/com.amigobrowser.readest.virgo/Data/Library/Application Support/com.amigobrowser.readest.virgo/settings.json`,
 relaunched: the `Readest-Test` deny is gone from the kernel log and the app
 renders the full "Start your library" empty state. `localBooksDir` self-heals
 — `settingsService.loadSettings` line 165 recomputes it from

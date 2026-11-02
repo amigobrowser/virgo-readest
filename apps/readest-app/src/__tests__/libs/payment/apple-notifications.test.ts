@@ -171,9 +171,9 @@ function createSupabaseMock(state: {
   return { client, captures };
 }
 
-const PLUS_PRODUCT = 'com.bilingify.readest.plus.monthly';
-const STORAGE_PRODUCT = 'com.bilingify.readest.storage.5gb.purchase';
-const BUNDLE_ID = 'com.bilingify.readest';
+const PLUS_PRODUCT = 'com.amigobrowser.readest.virgo.plus.monthly';
+const STORAGE_PRODUCT = 'com.amigobrowser.readest.virgo.storage.5gb.purchase';
+const BUNDLE_ID = 'com.amigobrowser.readest.virgo';
 const ORIGINAL_TX = 'orig-tx-1';
 
 const buildTransaction = (overrides: Record<string, unknown> = {}) => ({

@@ -2,25 +2,19 @@
   <a href="https://readest.com?utm_source=github&utm_medium=referral&utm_campaign=readme" target="_blank">
     <img src="https://github.com/readest/readest/blob/main/apps/readest-app/src-tauri/icons/icon.png?raw=true" alt="Readest Logo" width="20%" />
   </a>
-  <h1>Readest</h1>
+  <h1>Virgo Readest</h1>
   <br>
 
-[Readest][link-website] is an open-source ebook reader designed for immersive and deep reading experiences. Built as a modern rewrite of [Foliate](https://github.com/johnfactotum/foliate), it leverages [Next.js 16](https://github.com/vercel/next.js) and [Tauri v2](https://github.com/tauri-apps/tauri) to deliver a smooth, cross-platform experience across macOS, Windows, Linux, Android, iOS, and the Web.
+Virgo Readest is my personal fork of readest, that unlocks all local premium features for free. As i only use it on android, i compile it only for android. If you want it for other platforms, compile it yourself.
 
-[![Website][badge-website]][link-website]
-[![Web App][badge-web-app]][link-web-readest]
 [![OS][badge-platforms]][link-website]
 <br>
 [![Discord][badge-discord]][link-discord]
-[![Reddit][badge-reddit]][link-reddit]
 [![AGPL Licence][badge-license]](LICENSE)
 [![Language Coverage][badge-language-coverage]][link-locales]
-[![Donate][badge-donate]][link-donate]
 [![Latest release][badge-release]][link-gh-releases]
 [![Last commit][badge-last-commit]][link-gh-commits]
 [![Commits][badge-commit-activity]][link-gh-pulse]
-[![][badge-hellogithub]][link-hellogithub]
-[![Ask DeepWiki][badge-deepwiki]][link-deepwiki]
 
 </div>
 
@@ -42,7 +36,7 @@
   </a>
 </div>
 
-## Features
+## Base readest features
 
 
 | **Feature**                                | **Description**                                                                                                        |
@@ -52,7 +46,7 @@
 | **Full-Text Search**                       | Search inside a book or across the current library shelf to find relevant sections.                                    |
 | **Annotations and Highlighting**           | Add highlights, bookmarks, and notes to enhance your reading experience and use instant mode for quicker interactions. |
 | **Dictionary/Wikipedia Lookup**            | Look up words with built-in sources or import local packs, including Yomitan ZIP/RDICT, from Settings → Custom Dictionaries. |
-| **[Parallel Read][link-parallel-read]**    | Read two books or documents simultaneously in a split-screen view.                                                     |
+| **Parallel Read**    | Read two books or documents simultaneously in a split-screen view.                                                     |
 | **Customize Font and Layout**              | Adjust font, layout, theme mode, and theme colors for a personalized experience.                                       |
 | **Code Syntax Highlighting**               | Read software manuals with rich coloring of code examples.                                                             |
 | **File Association and Open With**         | Quickly open files in Readest in your file browser with one-click.                                                     |
@@ -62,7 +56,7 @@
 | **Translate with DeepL and Yandex**        | From a single sentence to the entire book—translate instantly.                                                         |
 | **Audiobook Support**                      | Extend functionality to play and manage audiobooks.                                                        |
 | **Text-to-Speech (TTS) Support**           | Enjoy smooth, multilingual narration—even within a single book.                                                        |
-| [**Read-Along Narration**][link-readalong] | Play embedded EPUB 3 Media Overlays with timed highlighting, or pair a reflowable EPUB locally with DRM-free MP3, M4A, or M4B narration. [Storyteller][link-storyteller] remains an option for generating phrase-aligned EPUBs. |
+| **Read-Along Narration** | Play embedded EPUB 3 Media Overlays with timed highlighting, or pair a reflowable EPUB locally with DRM-free MP3, M4A, or M4B narration. [Storyteller][link-storyteller] remains an option for generating phrase-aligned EPUBs. |
 | **Sync across Platforms**                  | Synchronize book files, reading progress, notes, and bookmarks across all supported platforms.                         |
 | [**Sync with Koreader**][link-kosync-wiki] | Synchronize reading progress, notes, and bookmarks with [Koreader][link-koreader] devices.                             |
 | **Accessibility**                          | Provides full keyboard navigation and support for screen readers such as VoiceOver, TalkBack, NVDA, and Orca.         |
@@ -100,19 +94,8 @@ Stay tuned for continuous improvements and updates! Contributions and suggestion
 
 ### Mobile Apps
 
-<div align="center">
-  <a href="https://apps.apple.com/app/id6738622779">
-    <img alt="Download on the App Store" src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" style="height: 50px;" /></a>&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://play.google.com/store/apps/details?id=com.bilingify.readest">
-    <img alt="Get it on Google Play" src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" style="height: 50px;" /></a>
-</div>
+Virgo Readest is not currently published in any stores. you should download it from this repo.
 
-### Platform-Specific Downloads
-
-- macOS / iOS / iPadOS : Search and install **Readest** on the [App Store][link-appstore], _also_ available on TestFlight for beta test (send your Apple ID to <readestapp@gmail.com> to request access).
-- Windows / Linux / Android: Visit and download **Readest** at [https://readest.com][link-website] or the [Releases on GitHub][link-gh-releases].
-- Linux users can also install [Readest on Flathub][link-flathub].
-- Web: Visit and use **Readest for Web** at [https://web.readest.com][link-web-readest].
 
 #### Nix
 
@@ -154,7 +137,7 @@ nix.settings = {
 };
 ```
 
-## Documentation
+## Base readest documentation
 
 Guides, tutorials, and FAQs for installing and using Readest live in the official documentation:
 
@@ -166,11 +149,11 @@ Contributor references live in the repository: [architecture](./apps/readest-app
 
 ## Building from Source
 
-To build Readest from the latest commit, see [Getting Started](./CONTRIBUTING.md#getting-started).
+To build Virgo Readest from the latest commit, see [Getting Started](./CONTRIBUTING.md#getting-started).
 
 ## Troubleshooting
 
-### 1. Readest Won’t Launch on Windows (Missing Edge WebView2 Runtime)
+### 1. Virgo Readest Won’t Launch on Windows (Missing Edge WebView2 Runtime)
 
 **Symptom**
 
@@ -214,7 +197,7 @@ set `DISPLAY` for applications. See [Niri's XWayland setup instructions](https:/
 From a terminal in that session, check `printenv DISPLAY`, then launch Readest:
 
 ```sh
-flatpak run com.bilingify.readest
+flatpak run com.amigobrowser.readest.virgo
 ```
 
 The Flatpak already requests the X11 socket. If you have customized its sandbox
@@ -227,23 +210,11 @@ and WebKitGTK environment variables do not affect CEF.
 
 Readest is open-source, and contributions are welcome! Feel free to open issues, suggest features, or submit pull requests. Please **review our [contributing guidelines](CONTRIBUTING.md) and [Code of Conduct](CODE_OF_CONDUCT.md) before you start**. We also welcome you to join our [Discord][link-discord] community for either support or contributing guidance.
 
-<a href="https://github.com/readest/readest/graphs/contributors">
+<a href="https://github.com/amigobrowser/virgo-readest/graphs/contributors">
   <p align="left">
-    <img width="500" src="https://contrib.rocks/image?repo=readest/readest" alt="A table of avatars from the project's contributors" />
+    <img width="500" src="https://contrib.rocks/image?repo=amigobrowser/virgo-readest" alt="A table of avatars from the project's contributors" />
   </p>
 </a>
-
-## Support
-
-If Readest has been useful to you, consider supporting its development at [donate.readest.com](https://donate.readest.com), where you'll find all available donation methods, including GitHub Sponsors, PayPal, card payments, and crypto. Your contribution helps us fix bugs faster, improve performance, and keep building great features.
-
-### Sponsors
-
-<p align="center">
-  <a title="Browser testing via TestMu AI" href="https://www.testmuai.com/?utm_medium=sponsor&utm_source=readest" target="_blank">
-    <img src="https://raw.githubusercontent.com/readest/readest/refs/heads/main/data/sponsors/testmu-ai-logo.png" style="vertical-align: middle;" width="250" />
-  </a>
-</p>
 
 ## License
 
@@ -291,11 +262,11 @@ We would also like to thank the [Web Chinese Fonts Plan](https://chinese-font.ne
 [link-flathub]: https://flathub.org/en/apps/com.bilingify.readest
 [link-web-readest]: https://web.readest.com
 [link-docs]: https://readest.com/docs
-[link-gh-releases]: https://github.com/readest/readest/releases
-[link-gh-commits]: https://github.com/readest/readest/commits/main
-[link-gh-pulse]: https://github.com/readest/readest/pulse
+[link-gh-releases]: https://github.com/amigobrowser/virgo-readest/releases
+[link-gh-commits]: https://github.com/amigobrowser/virgo-readest/commits/main
+[link-gh-pulse]: https://github.com/amigobrowser/virgo-readest/pulse
 [link-gh-wiki]: https://github.com/readest/readest/wiki
-[link-discord]: https://discord.gg/gntyVNk3BJ
+[link-discord]: need to put invite here later
 [link-parallel-read]: https://readest.com/#parallel-read
 [link-koreader]: https://github.com/koreader/koreader
 [link-hellogithub]: https://hellogithub.com/repository/8a5b6ade2aee461a8bd94e59200682a7

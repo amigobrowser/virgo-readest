@@ -24,7 +24,7 @@ panel. iOS/Android share sheets include Save to Files; Windows/Linux never share
 
 **Verifying a macOS Tauri dev build with desktop control:** `pnpm tauri dev` runs a bare
 `target/debug/Readest` with NO bundle identifier, so the computer-use allowlist (keyed on
-`com.bilingify.readest`) hides its window and blocks clicks. Recipe: `pnpm tauri dev --config
+`com.amigobrowser.readest.virgo`) hides its window and blocks clicks. Recipe: `pnpm tauri dev --config
 '{"build":{"devUrl":"http://localhost:3001","beforeDevCommand":"pnpm dev -p 3001"}}'` (3000 is
 usually taken by another worktree), let cargo finish, kill it, copy `target/debug/Readest` into
 `<scratch>/ReadestDev.app/Contents/MacOS/` with a minimal Info.plist carrying the identifier,

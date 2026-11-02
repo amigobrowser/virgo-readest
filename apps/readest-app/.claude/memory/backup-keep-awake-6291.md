@@ -46,7 +46,7 @@ The SAF save picker opens BEFORE the zip is written; the hook re-acquires on ret
 
 **macOS (release build, Apple Silicon, scratch library 760 MB / 354 files after
 the restore; measured 2026-09-19 by a temporary in-app probe under a scratch
-identifier `--config '{"identifier":"com.bilingify.readest.bench"}'` so the real
+identifier `--config '{"identifier":"com.amigobrowser.readest.virgo.bench"}'` so the real
 1.5 GB library was never touched):** backup old stream 86.3 s -> native 1.5-1.8 s;
 restore old 3.9 s -> native 1.6-1.9 s (into empty: 1.9 s). Primitives: streamed
 `plugin:fs|write {rid,data}` 8x1 MB = 883 ms (~9 MB/s: the chunk sits INSIDE a JSON

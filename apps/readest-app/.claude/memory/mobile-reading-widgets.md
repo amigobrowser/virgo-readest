@@ -7,7 +7,7 @@ metadata:
   originSessionId: 7f7f8218-4656-4863-972e-ea6204c130fa
 ---
 
-Mobile home-screen reading widgets (issue #1602, merged PR #4842). Code lives in the **native-bridge plugin**: `src-tauri/plugins/tauri-plugin-native-bridge/{android,ios}/` (Android `BookshelfWidgetProviders.kt` + `res/`; iOS writer `ReadingWidgetWriter.swift`) and the iOS WidgetKit extension at `src-tauri/gen/apple/ReadestWidget/`. App publishes a snapshot + downsized cover thumbnails via the `update_bookshelf_widget` command (Android widgets are configurable: each owns a `BookshelfDefinition` edited at `readest://widget-settings/{id}`) to iOS App Group `group.com.bilingify.readest` / Android `SharedPreferences`. Widget hook: `src/hooks/useBookshelfWidget.ts`; payload builder `src/services/widget/bookshelfWidget.ts`; tap opens `readest://book/{hash}` via `useOpenLaunchLinks.ts`.
+Mobile home-screen reading widgets (issue #1602, merged PR #4842). Code lives in the **native-bridge plugin**: `src-tauri/plugins/tauri-plugin-native-bridge/{android,ios}/` (Android `BookshelfWidgetProviders.kt` + `res/`; iOS writer `ReadingWidgetWriter.swift`) and the iOS WidgetKit extension at `src-tauri/gen/apple/ReadestWidget/`. App publishes a snapshot + downsized cover thumbnails via the `update_bookshelf_widget` command (Android widgets are configurable: each owns a `BookshelfDefinition` edited at `readest://widget-settings/{id}`) to iOS App Group `group.com.amigobrowser.readest.virgo` / Android `SharedPreferences`. Widget hook: `src/hooks/useBookshelfWidget.ts`; payload builder `src/services/widget/bookshelfWidget.ts`; tap opens `readest://book/{hash}` via `useOpenLaunchLinks.ts`.
 
 Durable, non-obvious gotchas (each cost a debugging round):
 

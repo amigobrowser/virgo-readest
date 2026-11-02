@@ -44,6 +44,6 @@ NOT reproduced, cause unconfirmed.
   MediaStore content URIs then fail ("path does not have a basename") — `adb unroot`
   before running the real lane.
 - Local runs that get killed leave app state behind (top-band test then sees a header
-  button over the first line); `pm clear com.bilingify.readest` to match CI's fresh install.
+  button over the first line); `pm clear com.amigobrowser.readest.virgo` to match CI's fresh install.
 - `double-click.android.test.ts` fails on the local arm64 emulator before AND after
   the fix; passes on CI x86_64. Not investigated.

@@ -24,7 +24,7 @@ Swift never did, so `screenCornerRadius` stayed 0 on iOS. Fix = Swift-only, comm
 connect ws `/devtools/page/N` (N changes per launch), pick the `Target.targetCreated` with type `page`
 (NOT the frame), wrap calls in `Target.sendMessageToTarget`; `awaitPromise` is IGNORED -> stash
 promise results on `window` and read back. `__TAURI_INTERNALS__.invoke` is NON-WRITABLE; to fake a native response, wrap `window.fetch` (iOS IPC = fetch ipc://) and dispatch `focus` to make useSafeAreaInsets re-query. Library cover tap needs pointerdown+pointerup+click (useLongPress).
-Settings live in the sim data container `Library/Application Support/com.bilingify.readest/settings.json`
+Settings live in the sim data container `Library/Application Support/com.amigobrowser.readest.virgo/settings.json`
 (edit with the app terminated). `xcrun simctl io booted screenshot --mask=black` shows the real corners.
 
 **Traps:** `until ! pgrep -f "<pattern>"` never exits because pgrep matches the waiting shell's own

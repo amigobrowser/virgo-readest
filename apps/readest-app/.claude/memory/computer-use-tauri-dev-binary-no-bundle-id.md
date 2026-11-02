@@ -12,7 +12,7 @@ Verifying a change in the real macOS app with computer-use: `pnpm tauri dev`
 launches `target/debug/Readest` directly, **not** an `.app` bundle. Its
 `CFBundleIdentifier` is NULL (`lsappinfo info -only bundleid <pid>`), so the
 screenshot compositor's allowlist filter — which matches on bundle id — excludes
-the window. `request_access` for "Readest" grants `com.bilingify.readest` and
+the window. `request_access` for "Readest" grants `com.amigobrowser.readest.virgo` and
 does nothing for the dev binary: you get a desktop screenshot with the app
 missing, while `System Events` happily reports a visible window at 0,25.
 
@@ -20,7 +20,7 @@ Fix without a 10-minute `tauri build`: a throwaway wrapper bundle in the
 scratchpad.
 
 ```
-Readest.app/Contents/Info.plist          # CFBundleIdentifier com.bilingify.readest,
+Readest.app/Contents/Info.plist          # CFBundleIdentifier com.amigobrowser.readest.virgo,
                                          # CFBundleExecutable Readest
 Readest.app/Contents/MacOS/Readest -> /Users/chrox/dev/readest/target/debug/Readest
 ```
@@ -54,7 +54,7 @@ Traps hit on the way:
   `cmd+[` just turns pages, and the sidebar cover opens the image viewer.
 
 Per-device prefs live in WKWebView localStorage, readable offline at
-`~/Library/WebKit/com.bilingify.readest/WebsiteData/Default/*/*/LocalStorage/localstorage.sqlite3`
+`~/Library/WebKit/com.amigobrowser.readest.virgo/WebsiteData/Default/*/*/LocalStorage/localstorage.sqlite3`
 (`select key, quote(value) from ItemTable`; values are UTF-16). Deleting a key
 with the app closed is how you test a **default** on a machine that already
 stored a choice. Used by [[bookdrop-cue-priming-rang-on-reader-open-6271]].

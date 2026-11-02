@@ -73,7 +73,7 @@ end tell'
 - Synthetic clicks (`System Events click at`) reach menus fine, but a click on
   a bookshelf cover opens Book Details, not the book, and the reader's hover
   header never reveals. To get into the reader, flip `openLastBooks` in
-  `~/Library/Application Support/com.bilingify.readest/settings.json` (back
+  `~/Library/Application Support/com.amigobrowser.readest.virgo/settings.json` (back
   the file up; the app rewrites it on quit) and relaunch.
 
 See [[bug-patterns]], [[layout-ui-fixes]], [[annotator-overlay-z-layers]].

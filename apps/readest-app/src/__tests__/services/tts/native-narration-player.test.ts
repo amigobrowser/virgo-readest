@@ -6,7 +6,7 @@ vi.mock('@tauri-apps/api/core', () => ({
 }));
 
 vi.mock('@tauri-apps/api/path', () => ({
-  appCacheDir: vi.fn(async () => '/data/user/0/com.bilingify.readest/cache'),
+  appCacheDir: vi.fn(async () => '/data/user/0/com.amigobrowser.readest.virgo/cache'),
   join: vi.fn(async (...parts: string[]) => parts.join('/')),
 }));
 
@@ -87,7 +87,7 @@ describe('NativeNarrationPlayer', () => {
     const player = new NativeNarrationPlayer();
     const bytes = new Uint8Array([1, 2, 3, 4]);
     const blob = new Blob([bytes]);
-    const directory = '/data/user/0/com.bilingify.readest/cache';
+    const directory = '/data/user/0/com.amigobrowser.readest.virgo/cache';
     try {
       await player.load('Audio/ch1.mp4', blob);
       const name = vi.mocked(writeFile).mock.calls[0]![0];

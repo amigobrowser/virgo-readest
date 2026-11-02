@@ -68,7 +68,9 @@ describe('tryNativeParsePdf', () => {
   it('gets metadata from Rust and the first-page cover from Android without a JS File read', async () => {
     const openedFile = {
       name: 'example.pdf',
-      getNativeLocation: () => ({ path: '/data/user/0/com.bilingify.readest/cache/example.pdf' }),
+      getNativeLocation: () => ({
+        path: '/data/user/0/com.amigobrowser.readest.virgo/cache/example.pdf',
+      }),
     } as unknown as File;
     const parsed = await tryNativeParsePdf(
       'content://com.android.fileexplorer.documents/document/42',
@@ -77,11 +79,11 @@ describe('tryNativeParsePdf', () => {
     );
 
     expect(invokeMock).toHaveBeenNthCalledWith(1, 'parse_pdf_metadata', {
-      filePath: '/data/user/0/com.bilingify.readest/cache/example.pdf',
+      filePath: '/data/user/0/com.amigobrowser.readest.virgo/cache/example.pdf',
     });
     expect(invokeMock).toHaveBeenNthCalledWith(2, 'render_pdf_cover', {
       payload: {
-        filePath: '/data/user/0/com.bilingify.readest/cache/example.pdf',
+        filePath: '/data/user/0/com.amigobrowser.readest.virgo/cache/example.pdf',
         maxLongEdge: 512,
       },
     });

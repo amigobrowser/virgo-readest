@@ -5,15 +5,15 @@ import { AvailablePlan } from '@/types/quota';
 import { stubTranslation as _ } from '@/utils/misc';
 
 const IAP_PRODUCT_IDS = [
-  'com.bilingify.readest.monthly.plus',
-  'com.bilingify.readest.monthly.pro',
-  'com.bilingify.readest.yearly.plus',
-  'com.bilingify.readest.yearly.pro',
-  'com.bilingify.readest.storage.1gb.purchase',
-  'com.bilingify.readest.storage.2gb.purchase',
-  'com.bilingify.readest.storage.5gb.purchase',
-  'com.bilingify.readest.storage.10gb.purchase',
-  'com.bilingify.readest.customization.purchase',
+  'com.amigobrowser.readest.virgo.monthly.plus',
+  'com.amigobrowser.readest.virgo.monthly.pro',
+  'com.amigobrowser.readest.virgo.yearly.plus',
+  'com.amigobrowser.readest.virgo.yearly.pro',
+  'com.amigobrowser.readest.virgo.storage.1gb.purchase',
+  'com.amigobrowser.readest.virgo.storage.2gb.purchase',
+  'com.amigobrowser.readest.virgo.storage.5gb.purchase',
+  'com.amigobrowser.readest.virgo.storage.10gb.purchase',
+  'com.amigobrowser.readest.virgo.customization.purchase',
 ];
 
 interface UseAvailablePlansParams {

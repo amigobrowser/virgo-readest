@@ -177,7 +177,7 @@ describe('importBook BookDoc lifecycle', () => {
       new File(['pdf content'], 'test.pdf', { type: 'application/pdf' }),
       {
         getNativeLocation: () => ({
-          path: '/data/user/0/com.bilingify.readest/cache/import-test.pdf',
+          path: '/data/user/0/com.amigobrowser.readest.virgo/cache/import-test.pdf',
         }),
       },
     );

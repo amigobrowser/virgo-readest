@@ -37,7 +37,7 @@ change speed, Space toggles play and Escape kills the session while typing.
   (cookies ignore ports), so imported test books may sync metadata; import via a
   synthetic `DragEvent` on `.library-page`, delete via details dialog afterwards.
 - Xiaomi CDP: `readest://book/<hash>` only navigated on a COLD start
-  (`am force-stop` then `am start -a VIEW -d ... com.bilingify.readest`); when the
+  (`am force-stop` then `am start -a VIEW -d ... com.amigobrowser.readest.virgo`); when the
   app was already on /library the intent was delivered but ignored, and both
   `.click()` and a CDP touch on the card did nothing. `Runtime.evaluate` needs
   `replMode: true` for top-level await. zsh does not word-split `$VAR` in

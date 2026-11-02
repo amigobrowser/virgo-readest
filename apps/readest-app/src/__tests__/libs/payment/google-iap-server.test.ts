@@ -42,11 +42,11 @@ const purchase = (userCancellationTimeMillis: string | null): VerifiedPurchase =
   subscriptionId: 'GPA.0000-0000-0000-00000',
   planName: 'Plus',
   planType: 'subscription',
-  productId: 'com.bilingify.readest.yearly.plus',
+  productId: 'com.amigobrowser.readest.virgo.yearly.plus',
   purchaseToken: 'token',
   quantity: 1,
   environment: 'production',
-  packageName: 'com.bilingify.readest',
+  packageName: 'com.amigobrowser.readest.virgo',
   userCancellationTimeMillis,
 });
 

@@ -119,8 +119,8 @@ function createSupabaseMock(state: {
   return { client, captures };
 }
 
-const PLUS_PRODUCT = 'com.bilingify.readest.plus.monthly';
-const PACKAGE = 'com.bilingify.readest';
+const PLUS_PRODUCT = 'com.amigobrowser.readest.virgo.plus.monthly';
+const PACKAGE = 'com.amigobrowser.readest.virgo';
 const TOKEN = 'purchase-token-1';
 
 const subRow = {

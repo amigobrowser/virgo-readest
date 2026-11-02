@@ -104,7 +104,9 @@ describe('POST /api/stripe/webhook — subscription cancelled', () => {
     // The production incident: a user migrated from card billing to Google
     // Play, and cancelling the leftover Stripe subscription wiped their plan.
     hooks.getHighestActivePlan.mockResolvedValue('free');
-    hooks.googleRows = [{ product_id: 'com.bilingify.readest.monthly.pro', status: 'active' }];
+    hooks.googleRows = [
+      { product_id: 'com.amigobrowser.readest.virgo.monthly.pro', status: 'active' },
+    ];
 
     const res = await POST(makeReq());
 

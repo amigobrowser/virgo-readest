@@ -35,10 +35,16 @@ const CATALOG: AvailablePlan[] = [
   plan('pro', 'month', 999, 'price_month_pro'),
   plan('plus', 'year', 3999, 'price_year_plus'),
   plan('pro', 'year', 7999, 'price_year_pro'),
-  plan('purchase', 'lifetime', 199, 'com.bilingify.readest.storage.1gb.purchase', '1 GB'),
-  plan('purchase', 'lifetime', 349, 'com.bilingify.readest.storage.2gb.purchase', '2 GB'),
-  plan('purchase', 'lifetime', 799, 'com.bilingify.readest.storage.5gb.purchase', '5 GB'),
-  plan('purchase', 'lifetime', 1499, 'com.bilingify.readest.storage.10gb.purchase', '10 GB'),
+  plan('purchase', 'lifetime', 199, 'com.amigobrowser.readest.virgo.storage.1gb.purchase', '1 GB'),
+  plan('purchase', 'lifetime', 349, 'com.amigobrowser.readest.virgo.storage.2gb.purchase', '2 GB'),
+  plan('purchase', 'lifetime', 799, 'com.amigobrowser.readest.virgo.storage.5gb.purchase', '5 GB'),
+  plan(
+    'purchase',
+    'lifetime',
+    1499,
+    'com.amigobrowser.readest.virgo.storage.10gb.purchase',
+    '10 GB',
+  ),
 ];
 
 // The store front sits in the profile page's max-w-4xl column.

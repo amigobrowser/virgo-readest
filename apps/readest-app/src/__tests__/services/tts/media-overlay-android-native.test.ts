@@ -6,7 +6,7 @@ vi.mock('@tauri-apps/api/core', () => ({
 }));
 
 vi.mock('@tauri-apps/api/path', () => ({
-  appCacheDir: vi.fn(async () => '/data/user/0/com.bilingify.readest/cache'),
+  appCacheDir: vi.fn(async () => '/data/user/0/com.amigobrowser.readest.virgo/cache'),
   join: vi.fn(async (...parts: string[]) => parts.join('/')),
 }));
 

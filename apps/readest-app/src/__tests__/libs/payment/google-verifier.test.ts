@@ -29,8 +29,8 @@ import { GoogleIAPVerifier } from '@/libs/payment/iap/google/verifier';
 const params = {
   orderId: 'order-1',
   purchaseToken: 'token-1',
-  productId: 'com.bilingify.readest.plus.monthly',
-  packageName: 'com.bilingify.readest',
+  productId: 'com.amigobrowser.readest.virgo.plus.monthly',
+  packageName: 'com.amigobrowser.readest.virgo',
 };
 
 describe('GoogleIAPVerifier.verifyPurchase', () => {
@@ -96,12 +96,12 @@ describe('GoogleIAPVerifier.consumeProductPurchase', () => {
 
     await new GoogleIAPVerifier().consumeProductPurchase({
       ...params,
-      productId: 'com.bilingify.readest.purchase.storage.1gb',
+      productId: 'com.amigobrowser.readest.virgo.purchase.storage.1gb',
     });
 
     expect(apiMocks.productsConsume).toHaveBeenCalledWith({
-      packageName: 'com.bilingify.readest',
-      productId: 'com.bilingify.readest.purchase.storage.1gb',
+      packageName: 'com.amigobrowser.readest.virgo',
+      productId: 'com.amigobrowser.readest.virgo.purchase.storage.1gb',
       token: 'token-1',
     });
   });

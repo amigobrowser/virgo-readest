@@ -36,23 +36,23 @@ describe('verifyGooglePurchaseProducts', () => {
     const purchases: IAPPurchase[] = [
       {
         platform: 'android',
-        productId: 'com.bilingify.readest.purchase.storage.1gb',
+        productId: 'com.amigobrowser.readest.virgo.purchase.storage.1gb',
         orderId: 'GPA.1',
         purchaseToken: 'tok-1',
-        packageName: 'com.bilingify.readest',
+        packageName: 'com.amigobrowser.readest.virgo',
         purchaseDate,
       },
       {
         platform: 'android',
-        productId: 'com.bilingify.readest.plus.monthly',
+        productId: 'com.amigobrowser.readest.virgo.plus.monthly',
         orderId: 'GPA.2',
         purchaseToken: 'tok-2',
-        packageName: 'com.bilingify.readest',
+        packageName: 'com.amigobrowser.readest.virgo',
         purchaseDate,
       },
       {
         platform: 'ios',
-        productId: 'com.bilingify.readest.purchase.storage.1gb',
+        productId: 'com.amigobrowser.readest.virgo.purchase.storage.1gb',
         transactionId: 't1',
         originalTransactionId: 't0',
         purchaseDate,
@@ -66,8 +66,8 @@ describe('verifyGooglePurchaseProducts', () => {
     expect(url).toBe('https://node.test/api/google/iap-verify');
     expect(init.headers['Authorization']).toBe('Bearer jwt');
     expect(JSON.parse(init.body)).toEqual({
-      packageName: 'com.bilingify.readest',
-      productId: 'com.bilingify.readest.purchase.storage.1gb',
+      packageName: 'com.amigobrowser.readest.virgo',
+      productId: 'com.amigobrowser.readest.virgo.purchase.storage.1gb',
       orderId: 'GPA.1',
       purchaseToken: 'tok-1',
     });
@@ -80,10 +80,10 @@ describe('verifyGooglePurchaseProducts', () => {
     await verifyGooglePurchaseProducts([
       {
         platform: 'android',
-        productId: 'com.bilingify.readest.plus.monthly',
+        productId: 'com.amigobrowser.readest.virgo.plus.monthly',
         orderId: 'GPA.2',
         purchaseToken: 'tok-2',
-        packageName: 'com.bilingify.readest',
+        packageName: 'com.amigobrowser.readest.virgo',
         purchaseDate,
       },
     ]);

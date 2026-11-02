@@ -118,7 +118,7 @@ Sim recipe that worked (2026-09-06): boot `xcrun simctl boot <udid>` + `open -a
 Simulator` FIRST, `pnpm dev-ios-sim` (Next export + cargo sim build + xcodebuild
 + `simctl install booted`, ~12 min; the install is the LAST step, so check the
 installed binary mtime before launching or you test the stale July app),
-`xcrun simctl launch booted com.bilingify.readest`, log via `xcrun simctl spawn
+`xcrun simctl launch booted com.amigobrowser.readest.virgo`, log via `xcrun simctl spawn
 booted log stream --predicate 'process == "Readest" OR eventMessage CONTAINS
 "Readest"'`. CarPlay: `osascript -e 'tell application "System Events" to tell
 process "Simulator" to click menu item "CarPlay" of menu "External Displays" of

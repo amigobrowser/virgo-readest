@@ -27,6 +27,6 @@ the MAIN checkout (worktrees lack `gen/apple` -> Info.plist not found), install 
 `xcrun devicectl device install app` (or ideviceinstaller over USB), launch with
 `devicectl device process launch --terminate-existing` (fails while Locked). Diagnostics:
 `invoke('plugin:log|log', {level:5, message})` from JS, then pull
-`Library/Application Support/com.bilingify.readest/logs/Readest.log` with
-`afcclient --container com.bilingify.readest` (dev-signed app). User must tap the pickers.
+`Library/Application Support/com.amigobrowser.readest.virgo/logs/Readest.log` with
+`afcclient --container com.amigobrowser.readest.virgo` (dev-signed app). User must tap the pickers.
 Worktree, branch and diag stash removed after merge.
