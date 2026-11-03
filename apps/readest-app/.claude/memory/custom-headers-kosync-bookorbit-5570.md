@@ -63,9 +63,19 @@ and always run the direct-to-target control first.
 **Kosync proxy endpoint allowlist:** `bookorbit.ts` anchors its endpoint
 patterns and `isValidKoSyncEndpoint` is exported for tests; the kosync
 hardening notes are in [[private-custom-headers-kosync-bookorbit-5570]] (local only).
+**Kosync proxy endpoint allowlist:** `bookorbit.ts` anchors its endpoint
+patterns and `isValidKoSyncEndpoint` is exported for tests; the kosync
+hardening notes are in [[private-custom-headers-kosync-bookorbit-5570]] (local only).
 
 **Open, not fixed:**
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+- `/api/bookorbit` returns **404 in production** while `/api/kosync` returns 405.
+  Source is on main (#5487) — the web deploy is simply behind, so BookOrbit sync
+  over web does not work at all yet, headers or no headers.
+- OPDS catalog `customHeaders` sync follow-up: [[private-custom-headers-kosync-bookorbit-5570]] (local only).
+>>>>>>> ea30e193f (chore(agent): update memories (#7295))
 - `/api/bookorbit` 500'd on EVERY request in production (#7291): it used
   `redirect: 'error'`, which Cloudflare Workers rejects ("Invalid redirect
   value, must be one of follow or manual"). Unit tests stub fetch, so they never
