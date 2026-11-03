@@ -25,9 +25,15 @@ derived from the OneDrive translations (zh uses Apple's official
 "iCloud 云盘"/"iCloud 雲碟").
 
 **Apple portal DONE (2026-08-06, verified in Chrome):** iCloud capability
+<<<<<<< HEAD
 (CloudKit-support mode) enabled on App ID `com.amigobrowser.readest.virgo`
 (record W2MFVY8AR6); account has exactly ONE container,
 `iCloud.com.amigobrowser.readest.virgo` — matches the entitlements pin and the
+=======
+(CloudKit-support mode) enabled on App ID `com.bilingify.readest`
+(record id in [[private-icloud-sync-provider]]); account has exactly ONE container,
+`iCloud.com.bilingify.readest` — matches the entitlements pin and the
+>>>>>>> 414846019 (chore(agent): update memories (#7295))
 code's nil-identifier default-container resolution. Side effect: the
 capability change INVALIDATED most provisioning profiles
 (iOS-AppStore-251202, iOS-readest-260531, Mac-AppStore-251202,
