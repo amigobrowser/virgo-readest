@@ -1,4 +1,3 @@
-// @vitest-environment happy-dom
 // Overlayer.dashedUnderline draws the copies of a global annotation: a dashed
 // line where Overlayer.underline puts its solid one, stroked from a color that
 // may be a CSS variable so it follows the theme without a redraw.
