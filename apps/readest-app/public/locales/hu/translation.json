@@ -2735,6 +2735,7 @@
   "Sync with Anki": "Szinkronizálás az Ankival",
   "Import Anki Deck...": "Anki-pakli importálása...",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "In sync with Anki": "Szinkronban az Ankival",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory szinkronizálás",
@@ -2831,4 +2832,7 @@
 =======
   "In sync with Anki": "Szinkronban az Ankival"
 >>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
+=======
+  "In sync with Anki": "Szinkronban az Ankival"
+>>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

@@ -2662,6 +2662,7 @@
   "Sync with Anki": "Ankiと同期",
   "Import Anki Deck...": "Ankiデッキをインポート...",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "In sync with Anki": "Ankiと同期済み",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory 同期",
@@ -2758,4 +2759,7 @@
 =======
   "In sync with Anki": "Ankiと同期済み"
 >>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
+=======
+  "In sync with Anki": "Ankiと同期済み"
+>>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

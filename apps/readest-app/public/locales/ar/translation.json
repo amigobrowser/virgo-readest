@@ -3027,6 +3027,7 @@
   "Sync with Anki": "المزامنة مع Anki",
   "Import Anki Deck...": "استيراد رزمة Anki...",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "In sync with Anki": "متزامن مع Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "مزامنة Grimmory",
@@ -3123,4 +3124,7 @@
 =======
   "In sync with Anki": "متزامن مع Anki"
 >>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
+=======
+  "In sync with Anki": "متزامن مع Anki"
+>>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

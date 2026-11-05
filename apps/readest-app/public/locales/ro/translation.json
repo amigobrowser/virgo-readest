@@ -2808,6 +2808,7 @@
   "Sync with Anki": "Sincronizează cu Anki",
   "Import Anki Deck...": "Importă pachet Anki...",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "In sync with Anki": "Sincronizat cu Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Sincronizare Grimmory",
@@ -2904,4 +2905,7 @@
 =======
   "In sync with Anki": "Sincronizat cu Anki"
 >>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
+=======
+  "In sync with Anki": "Sincronizat cu Anki"
+>>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

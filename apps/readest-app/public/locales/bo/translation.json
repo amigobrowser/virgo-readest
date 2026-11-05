@@ -2662,6 +2662,7 @@
   "Sync with Anki": "Anki དང་མཉམ་སྦྲེལ།",
   "Import Anki Deck...": "Anki ཡི་ཤོག་བུ་ཚོགས་ནང་འདྲེན།...",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "In sync with Anki": "Anki དང་མཉམ་སྦྲེལ་ཟིན།",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory མཉམ་འགྲིག",
@@ -2758,4 +2759,7 @@
 =======
   "In sync with Anki": "Anki དང་མཉམ་སྦྲེལ་ཟིན།"
 >>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
+=======
+  "In sync with Anki": "Anki དང་མཉམ་སྦྲེལ་ཟིན།"
+>>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

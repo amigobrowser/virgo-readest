@@ -2735,6 +2735,7 @@
   "Sync with Anki": "Anki ile senkronize et",
   "Import Anki Deck...": "Anki destesini içe aktar...",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "In sync with Anki": "Anki ile senkronize",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory Senkronizasyonu",
@@ -2831,4 +2832,7 @@
 =======
   "In sync with Anki": "Anki ile senkronize"
 >>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
+=======
+  "In sync with Anki": "Anki ile senkronize"
+>>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

@@ -2662,6 +2662,7 @@
   "Sync with Anki": "Đồng bộ với Anki",
   "Import Anki Deck...": "Nhập bộ thẻ Anki...",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "In sync with Anki": "Đã đồng bộ với Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Đồng bộ Grimmory",
@@ -2758,4 +2759,7 @@
 =======
   "In sync with Anki": "Đã đồng bộ với Anki"
 >>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
+=======
+  "In sync with Anki": "Đã đồng bộ với Anki"
+>>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

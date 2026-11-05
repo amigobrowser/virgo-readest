@@ -2735,6 +2735,7 @@
   "Sync with Anki": "Synchroniseren met Anki",
   "Import Anki Deck...": "Anki-stapel importeren...",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "In sync with Anki": "Gesynchroniseerd met Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory-synchronisatie",
@@ -2831,4 +2832,7 @@
 =======
   "In sync with Anki": "Gesynchroniseerd met Anki"
 >>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
+=======
+  "In sync with Anki": "Gesynchroniseerd met Anki"
+>>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

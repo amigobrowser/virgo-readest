@@ -2662,6 +2662,7 @@
   "Sync with Anki": "ซิงค์กับ Anki",
   "Import Anki Deck...": "นำเข้าสำรับ Anki...",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "In sync with Anki": "ซิงค์กับ Anki แล้ว",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "ซิงค์ Grimmory",
@@ -2758,4 +2759,7 @@
 =======
   "In sync with Anki": "ซิงค์กับ Anki แล้ว"
 >>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
+=======
+  "In sync with Anki": "ซิงค์กับ Anki แล้ว"
+>>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

@@ -2735,6 +2735,7 @@
   "Sync with Anki": "Synkronisera med Anki",
   "Import Anki Deck...": "Importera Anki-kortlek...",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "In sync with Anki": "Synkroniserad med Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory-synkronisering",
@@ -2831,4 +2832,7 @@
 =======
   "In sync with Anki": "Synkroniserad med Anki"
 >>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
+=======
+  "In sync with Anki": "Synkroniserad med Anki"
+>>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

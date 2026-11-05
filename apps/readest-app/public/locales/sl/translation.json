@@ -2881,6 +2881,7 @@
   "Sync with Anki": "Sinhroniziraj z Ankijem",
   "Import Anki Deck...": "Uvozi komplet iz Ankija...",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "In sync with Anki": "Sinhronizirano z Ankijem",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Sinhronizacija Grimmory",
@@ -2977,4 +2978,7 @@
 =======
   "In sync with Anki": "Sinhronizirano z Ankijem"
 >>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
+=======
+  "In sync with Anki": "Sinhronizirano z Ankijem"
+>>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

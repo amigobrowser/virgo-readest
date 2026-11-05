@@ -2662,6 +2662,7 @@
   "Sync with Anki": "Anki와 동기화",
   "Import Anki Deck...": "Anki 덱 가져오기...",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "In sync with Anki": "Anki와 동기화됨",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory 동기화",
@@ -2758,4 +2759,7 @@
 =======
   "In sync with Anki": "Anki와 동기화됨"
 >>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
+=======
+  "In sync with Anki": "Anki와 동기화됨"
+>>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }
