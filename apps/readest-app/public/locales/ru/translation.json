@@ -2880,6 +2880,7 @@
   "{{count}} now Mastered_other": "Теперь «Выучено»: {{count}}",
   "Sync with Anki": "Синхронизировать с Anki",
   "Import Anki Deck...": "Импортировать колоду Anki...",
+<<<<<<< HEAD
   "In sync with Anki": "Синхронизировано с Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Синхронизация Grimmory",
@@ -2973,4 +2974,7 @@
   "Reset Counts": "Сбросить счётчики",
   "Reset the counts and sync history on this device?": "Сбросить счётчики и историю синхронизации на этом устройстве?",
   "Folder not available": "Папка недоступна"
+=======
+  "In sync with Anki": "Синхронизировано с Anki"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

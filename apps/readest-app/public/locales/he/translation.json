@@ -2807,6 +2807,7 @@
   "{{count}} now Mastered_other": "עכשיו „נלמדה”: {{count}}",
   "Sync with Anki": "סנכרון עם Anki",
   "Import Anki Deck...": "ייבוא חפיסת Anki...",
+<<<<<<< HEAD
   "In sync with Anki": "מסונכרן עם Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "סנכרון Grimmory",
@@ -2900,4 +2901,7 @@
   "Reset Counts": "איפוס ספירות",
   "Reset the counts and sync history on this device?": "לאפס את הספירות ואת היסטוריית הסנכרון במכשיר הזה?",
   "Folder not available": "התיקייה אינה זמינה"
+=======
+  "In sync with Anki": "מסונכרן עם Anki"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

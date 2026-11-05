@@ -2807,6 +2807,7 @@
   "{{count}} now Mastered_other": "{{count}} passent en « Maîtrisé »",
   "Sync with Anki": "Synchroniser avec Anki",
   "Import Anki Deck...": "Importer un paquet Anki...",
+<<<<<<< HEAD
   "In sync with Anki": "Synchronisé avec Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Synchronisation Grimmory",
@@ -2900,4 +2901,7 @@
   "Reset Counts": "Réinitialiser les compteurs",
   "Reset the counts and sync history on this device?": "Réinitialiser les compteurs et l'historique de synchronisation sur cet appareil ?",
   "Folder not available": "Dossier indisponible"
+=======
+  "In sync with Anki": "Synchronisé avec Anki"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

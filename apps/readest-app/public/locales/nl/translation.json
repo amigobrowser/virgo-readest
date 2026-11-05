@@ -2734,6 +2734,7 @@
   "{{count}} now Mastered_other": "{{count}} nu ‘Beheerst’",
   "Sync with Anki": "Synchroniseren met Anki",
   "Import Anki Deck...": "Anki-stapel importeren...",
+<<<<<<< HEAD
   "In sync with Anki": "Gesynchroniseerd met Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory-synchronisatie",
@@ -2827,4 +2828,7 @@
   "Reset Counts": "Tellers resetten",
   "Reset the counts and sync history on this device?": "Tellers en synchronisatiegeschiedenis op dit apparaat resetten?",
   "Folder not available": "Map niet beschikbaar"
+=======
+  "In sync with Anki": "Gesynchroniseerd met Anki"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

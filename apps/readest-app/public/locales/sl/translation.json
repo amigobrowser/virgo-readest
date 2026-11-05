@@ -2880,6 +2880,7 @@
   "{{count}} now Mastered_other": "Zdaj »Osvojeno«: {{count}}",
   "Sync with Anki": "Sinhroniziraj z Ankijem",
   "Import Anki Deck...": "Uvozi komplet iz Ankija...",
+<<<<<<< HEAD
   "In sync with Anki": "Sinhronizirano z Ankijem",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Sinhronizacija Grimmory",
@@ -2973,4 +2974,7 @@
   "Reset Counts": "Ponastavi števce",
   "Reset the counts and sync history on this device?": "Želite ponastaviti števce in zgodovino sinhronizacije v tej napravi?",
   "Folder not available": "Mapa ni na voljo"
+=======
+  "In sync with Anki": "Sinhronizirano z Ankijem"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

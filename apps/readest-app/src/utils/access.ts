@@ -132,7 +132,7 @@ export const isAbsOfflineAllowed = (plan: UserPlan, customizationPurchased: bool
  * CSV export stays free. Client-side gate, like the TTS cache. Flipping it off
  * ungates every plan.
  */
-export const ANKI_REQUIRES_PREMIUM = false;
+export const ANKI_REQUIRES_PREMIUM = true;
 
 export const isAnkiAllowed = (plan: UserPlan, customizationPurchased: boolean): boolean =>
   !ANKI_REQUIRES_PREMIUM || isCustomizationAllowed(plan, customizationPurchased);

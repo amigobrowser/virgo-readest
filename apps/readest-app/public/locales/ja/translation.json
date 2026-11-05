@@ -2661,6 +2661,7 @@
   "{{count}} now Mastered_other": "{{count}}件が「習得済み」に",
   "Sync with Anki": "Ankiと同期",
   "Import Anki Deck...": "Ankiデッキをインポート...",
+<<<<<<< HEAD
   "In sync with Anki": "Ankiと同期済み",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory 同期",
@@ -2754,4 +2755,7 @@
   "Reset Counts": "カウントをリセット",
   "Reset the counts and sync history on this device?": "このデバイスのカウントと同期履歴をリセットしますか？",
   "Folder not available": "フォルダーを利用できません"
+=======
+  "In sync with Anki": "Ankiと同期済み"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

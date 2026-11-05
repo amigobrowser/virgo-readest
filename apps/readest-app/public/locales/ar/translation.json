@@ -3026,6 +3026,7 @@
   "{{count}} now Mastered_other": "أصبحت «متقنة»: {{count}}",
   "Sync with Anki": "المزامنة مع Anki",
   "Import Anki Deck...": "استيراد رزمة Anki...",
+<<<<<<< HEAD
   "In sync with Anki": "متزامن مع Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "مزامنة Grimmory",
@@ -3119,4 +3120,7 @@
   "Reset Counts": "إعادة تعيين العدادات",
   "Reset the counts and sync history on this device?": "هل تريد إعادة تعيين العدادات وسجل المزامنة على هذا الجهاز؟",
   "Folder not available": "المجلد غير متاح"
+=======
+  "In sync with Anki": "متزامن مع Anki"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

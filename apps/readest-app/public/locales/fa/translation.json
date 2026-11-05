@@ -2734,6 +2734,7 @@
   "{{count}} now Mastered_other": "{{count}} اکنون «آموخته‌شده»",
   "Sync with Anki": "همگام‌سازی با Anki",
   "Import Anki Deck...": "وارد کردن دسته Anki...",
+<<<<<<< HEAD
   "In sync with Anki": "با Anki همگام است",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "همگام‌سازی Grimmory",
@@ -2827,4 +2828,7 @@
   "Reset Counts": "بازنشانی شمارش‌ها",
   "Reset the counts and sync history on this device?": "شمارش‌ها و تاریخچه همگام‌سازی در این دستگاه بازنشانی شوند؟",
   "Folder not available": "پوشه در دسترس نیست"
+=======
+  "In sync with Anki": "با Anki همگام است"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

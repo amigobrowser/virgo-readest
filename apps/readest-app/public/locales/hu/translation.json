@@ -2734,6 +2734,7 @@
   "{{count}} now Mastered_other": "{{count}} most „Elsajátítva”",
   "Sync with Anki": "Szinkronizálás az Ankival",
   "Import Anki Deck...": "Anki-pakli importálása...",
+<<<<<<< HEAD
   "In sync with Anki": "Szinkronban az Ankival",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory szinkronizálás",
@@ -2827,4 +2828,7 @@
   "Reset Counts": "Számlálók nullázása",
   "Reset the counts and sync history on this device?": "Nullázza a számlálókat és a szinkronizálási előzményeket ezen az eszközön?",
   "Folder not available": "A mappa nem érhető el"
+=======
+  "In sync with Anki": "Szinkronban az Ankival"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

@@ -2807,6 +2807,7 @@
   "{{count}} now Mastered_other": "{{count}} ora «Imparata»",
   "Sync with Anki": "Sincronizza con Anki",
   "Import Anki Deck...": "Importa mazzo Anki...",
+<<<<<<< HEAD
   "In sync with Anki": "Sincronizzato con Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Sincronizzazione Grimmory",
@@ -2900,4 +2901,7 @@
   "Reset Counts": "Azzera conteggi",
   "Reset the counts and sync history on this device?": "Azzerare i conteggi e la cronologia di sincronizzazione su questo dispositivo?",
   "Folder not available": "Cartella non disponibile"
+=======
+  "In sync with Anki": "Sincronizzato con Anki"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

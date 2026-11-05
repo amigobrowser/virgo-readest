@@ -2880,6 +2880,7 @@
   "{{count}} now Mastered_other": "Teraz „Opanowane”: {{count}}",
   "Sync with Anki": "Synchronizuj z Anki",
   "Import Anki Deck...": "Importuj talię Anki...",
+<<<<<<< HEAD
   "In sync with Anki": "Zsynchronizowano z Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Synchronizacja Grimmory",
@@ -2973,4 +2974,7 @@
   "Reset Counts": "Resetuj liczniki",
   "Reset the counts and sync history on this device?": "Zresetować liczniki i historię synchronizacji na tym urządzeniu?",
   "Folder not available": "Folder niedostępny"
+=======
+  "In sync with Anki": "Zsynchronizowano z Anki"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

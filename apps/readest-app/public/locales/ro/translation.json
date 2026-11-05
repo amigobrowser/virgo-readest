@@ -2807,6 +2807,7 @@
   "{{count}} now Mastered_other": "Acum „Stăpânit”: {{count}}",
   "Sync with Anki": "Sincronizează cu Anki",
   "Import Anki Deck...": "Importă pachet Anki...",
+<<<<<<< HEAD
   "In sync with Anki": "Sincronizat cu Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Sincronizare Grimmory",
@@ -2900,4 +2901,7 @@
   "Reset Counts": "Resetează contoarele",
   "Reset the counts and sync history on this device?": "Resetezi contoarele și istoricul sincronizării pe acest dispozitiv?",
   "Folder not available": "Dosar indisponibil"
+=======
+  "In sync with Anki": "Sincronizat cu Anki"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

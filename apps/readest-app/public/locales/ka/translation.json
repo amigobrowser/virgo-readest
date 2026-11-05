@@ -2734,6 +2734,7 @@
   "{{count}} now Mastered_other": "{{count}} ახლა „ნასწავლი“",
   "Sync with Anki": "Anki-სთან სინქრონიზაცია",
   "Import Anki Deck...": "Anki-ს დასტის იმპორტი...",
+<<<<<<< HEAD
   "In sync with Anki": "სინქრონიზებულია Anki-სთან",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory სინქრონიზაცია",
@@ -2827,4 +2828,7 @@
   "Reset Counts": "მრიცხველების გადატვირთვა",
   "Reset the counts and sync history on this device?": "გადაიტვირთოს მრიცხველები და სინქრონიზაციის ისტორია ამ მოწყობილობაზე?",
   "Folder not available": "საქაღალდე მიუწვდომელია"
+=======
+  "In sync with Anki": "სინქრონიზებულია Anki-სთან"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

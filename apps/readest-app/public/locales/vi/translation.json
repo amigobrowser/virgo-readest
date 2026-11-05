@@ -2661,6 +2661,7 @@
   "{{count}} now Mastered_other": "{{count}} từ giờ là “Đã thuộc”",
   "Sync with Anki": "Đồng bộ với Anki",
   "Import Anki Deck...": "Nhập bộ thẻ Anki...",
+<<<<<<< HEAD
   "In sync with Anki": "Đã đồng bộ với Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Đồng bộ Grimmory",
@@ -2754,4 +2755,7 @@
   "Reset Counts": "Đặt lại số liệu",
   "Reset the counts and sync history on this device?": "Đặt lại số liệu và lịch sử đồng bộ trên thiết bị này?",
   "Folder not available": "Thư mục không khả dụng"
+=======
+  "In sync with Anki": "Đã đồng bộ với Anki"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

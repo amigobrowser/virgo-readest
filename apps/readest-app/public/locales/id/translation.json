@@ -2661,6 +2661,7 @@
   "{{count}} now Mastered_other": "{{count}} kini “Dikuasai”",
   "Sync with Anki": "Sinkronkan dengan Anki",
   "Import Anki Deck...": "Impor Dek Anki...",
+<<<<<<< HEAD
   "In sync with Anki": "Sinkron dengan Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Sinkronisasi Grimmory",
@@ -2754,4 +2755,7 @@
   "Reset Counts": "Atur Ulang Hitungan",
   "Reset the counts and sync history on this device?": "Atur ulang hitungan dan riwayat sinkronisasi di perangkat ini?",
   "Folder not available": "Folder tidak tersedia"
+=======
+  "In sync with Anki": "Sinkron dengan Anki"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }

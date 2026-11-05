@@ -2734,6 +2734,7 @@
   "{{count}} now Mastered_other": "{{count}}ක් දැන් “ප්‍රගුණ කළා”",
   "Sync with Anki": "Anki සමඟ සමමුහුර්ත කරන්න",
   "Import Anki Deck...": "Anki ඩෙක් ආයාත කරන්න...",
+<<<<<<< HEAD
   "In sync with Anki": "Anki සමඟ සමමුහුර්තයි",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory සමමුහුර්තය",
@@ -2827,4 +2828,7 @@
   "Reset Counts": "ගණන් යළි සකසන්න",
   "Reset the counts and sync history on this device?": "මෙම උපාංගයේ ගණන් සහ සමමුහුර්ත ඉතිහාසය යළි සකසන්නද?",
   "Folder not available": "ෆෝල්ඩරය ලබා ගත නොහැක"
+=======
+  "In sync with Anki": "Anki සමඟ සමමුහුර්තයි"
+>>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
 }
