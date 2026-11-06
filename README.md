@@ -9,9 +9,7 @@ Virgo Readest is my personal fork of readest, that unlocks all local premium fea
 
 [![OS][badge-platforms]][link-website]
 <br>
-[![Discord][badge-discord]][link-discord]
 [![AGPL Licence][badge-license]](LICENSE)
-[![Language Coverage][badge-language-coverage]][link-locales]
 [![Latest release][badge-release]][link-gh-releases]
 [![Last commit][badge-last-commit]][link-gh-commits]
 [![Commits][badge-commit-activity]][link-gh-pulse]
