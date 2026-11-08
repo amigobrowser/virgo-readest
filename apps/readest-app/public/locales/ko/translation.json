@@ -2661,8 +2661,6 @@
   "{{count}} now Mastered_other": "{{count}}개가 '익힘'으로 바뀜",
   "Sync with Anki": "Anki와 동기화",
   "Import Anki Deck...": "Anki 덱 가져오기...",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "In sync with Anki": "Anki와 동기화됨",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory 동기화",
@@ -2756,10 +2754,4 @@
   "Reset Counts": "횟수 초기화",
   "Reset the counts and sync history on this device?": "이 기기의 횟수와 동기화 기록을 초기화할까요?",
   "Folder not available": "폴더를 사용할 수 없음"
-=======
-  "In sync with Anki": "Anki와 동기화됨"
->>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
-=======
-  "In sync with Anki": "Anki와 동기화됨"
->>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

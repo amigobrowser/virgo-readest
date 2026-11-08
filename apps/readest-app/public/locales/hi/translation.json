@@ -2734,8 +2734,6 @@
   "{{count}} now Mastered_other": "{{count}} अब “सीख लिया”",
   "Sync with Anki": "Anki के साथ सिंक करें",
   "Import Anki Deck...": "Anki डेक इम्पोर्ट करें...",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "In sync with Anki": "Anki के साथ सिंक है",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory सिंक",
@@ -2829,10 +2827,4 @@
   "Reset Counts": "गिनती रीसेट करें",
   "Reset the counts and sync history on this device?": "इस डिवाइस की गिनती और सिंक इतिहास रीसेट करें?",
   "Folder not available": "फ़ोल्डर उपलब्ध नहीं है"
-=======
-  "In sync with Anki": "Anki के साथ सिंक है"
->>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
-=======
-  "In sync with Anki": "Anki के साथ सिंक है"
->>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

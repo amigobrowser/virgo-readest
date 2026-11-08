@@ -2661,8 +2661,6 @@
   "{{count}} now Mastered_other": "{{count}} คำเป็น “จำได้แล้ว”",
   "Sync with Anki": "ซิงค์กับ Anki",
   "Import Anki Deck...": "นำเข้าสำรับ Anki...",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "In sync with Anki": "ซิงค์กับ Anki แล้ว",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "ซิงค์ Grimmory",
@@ -2756,10 +2754,4 @@
   "Reset Counts": "รีเซ็ตจำนวน",
   "Reset the counts and sync history on this device?": "รีเซ็ตจำนวนและประวัติการซิงค์บนอุปกรณ์นี้หรือไม่",
   "Folder not available": "โฟลเดอร์ไม่พร้อมใช้งาน"
-=======
-  "In sync with Anki": "ซิงค์กับ Anki แล้ว"
->>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
-=======
-  "In sync with Anki": "ซิงค์กับ Anki แล้ว"
->>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

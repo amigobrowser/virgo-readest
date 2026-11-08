@@ -2661,8 +2661,6 @@
   "{{count}} now Mastered_other": "{{count}} kini “Dikuasai”",
   "Sync with Anki": "Segerakkan dengan Anki",
   "Import Anki Deck...": "Import Dek Anki...",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "In sync with Anki": "Segerak dengan Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Penyegerakan Grimmory",
@@ -2756,10 +2754,4 @@
   "Reset Counts": "Tetapkan Semula Kiraan",
   "Reset the counts and sync history on this device?": "Tetapkan semula kiraan dan sejarah penyegerakan pada peranti ini?",
   "Folder not available": "Folder tidak tersedia"
-=======
-  "In sync with Anki": "Segerak dengan Anki"
->>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
-=======
-  "In sync with Anki": "Segerak dengan Anki"
->>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

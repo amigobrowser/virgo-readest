@@ -2734,8 +2734,6 @@
   "{{count}} now Mastered_other": "{{count}} nu ”Behärskar”",
   "Sync with Anki": "Synkronisera med Anki",
   "Import Anki Deck...": "Importera Anki-kortlek...",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "In sync with Anki": "Synkroniserad med Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory-synkronisering",
@@ -2829,10 +2827,4 @@
   "Reset Counts": "Nollställ räknare",
   "Reset the counts and sync history on this device?": "Nollställ räknare och synkroniseringshistorik på den här enheten?",
   "Folder not available": "Mappen är inte tillgänglig"
-=======
-  "In sync with Anki": "Synkroniserad med Anki"
->>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
-=======
-  "In sync with Anki": "Synkroniserad med Anki"
->>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

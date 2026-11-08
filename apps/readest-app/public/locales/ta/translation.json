@@ -2734,8 +2734,6 @@
   "{{count}} now Mastered_other": "{{count}} இப்போது “கற்றுவிட்டேன்”",
   "Sync with Anki": "Anki உடன் ஒத்திசைக்கவும்",
   "Import Anki Deck...": "Anki டெக்கை இறக்குமதி செய்...",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "In sync with Anki": "Anki உடன் ஒத்திசைக்கப்பட்டது",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory ஒத்திசைவு",
@@ -2829,10 +2827,4 @@
   "Reset Counts": "எண்ணிக்கையை மீட்டமை",
   "Reset the counts and sync history on this device?": "இந்தச் சாதனத்தில் எண்ணிக்கைகளையும் ஒத்திசைவு வரலாற்றையும் மீட்டமைக்கவா?",
   "Folder not available": "கோப்புறை கிடைக்கவில்லை"
-=======
-  "In sync with Anki": "Anki உடன் ஒத்திசைக்கப்பட்டது"
->>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
-=======
-  "In sync with Anki": "Anki உடன் ஒத்திசைக்கப்பட்டது"
->>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

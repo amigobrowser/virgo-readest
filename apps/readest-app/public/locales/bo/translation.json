@@ -2661,8 +2661,6 @@
   "{{count}} now Mastered_other": "{{count}} ད་ “ཤེས་ཟིན་པ།”",
   "Sync with Anki": "Anki དང་མཉམ་སྦྲེལ།",
   "Import Anki Deck...": "Anki ཡི་ཤོག་བུ་ཚོགས་ནང་འདྲེན།...",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "In sync with Anki": "Anki དང་མཉམ་སྦྲེལ་ཟིན།",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory མཉམ་འགྲིག",
@@ -2756,10 +2754,4 @@
   "Reset Counts": "གྲངས་ཚད་བསྐྱར་སྒྲིག",
   "Reset the counts and sync history on this device?": "སྒྲིག་ཆས་འདིའི་གྲངས་ཚད་དང་མཉམ་སྡེབ་ལོ་རྒྱུས་བསྐྱར་སྒྲིག་བྱེད་དམ།",
   "Folder not available": "ཡིག་སྣོད་མི་རག"
-=======
-  "In sync with Anki": "Anki དང་མཉམ་སྦྲེལ་ཟིན།"
->>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
-=======
-  "In sync with Anki": "Anki དང་མཉམ་སྦྲེལ་ཟིན།"
->>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

@@ -2734,8 +2734,6 @@
   "{{count}} now Mastered_other": "{{count}} tasi endi “O‘zlashtirildi”",
   "Sync with Anki": "Anki bilan sinxronlash",
   "Import Anki Deck...": "Anki to‘plamini import qilish...",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "In sync with Anki": "Anki bilan sinxronlangan",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory sinxronlash",
@@ -2829,10 +2827,4 @@
   "Reset Counts": "Hisoblagichlarni tiklash",
   "Reset the counts and sync history on this device?": "Bu qurilmadagi hisoblagichlar va sinxronlash tarixi tiklansinmi?",
   "Folder not available": "Jild mavjud emas"
-=======
-  "In sync with Anki": "Anki bilan sinxronlangan"
->>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
-=======
-  "In sync with Anki": "Anki bilan sinxronlangan"
->>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

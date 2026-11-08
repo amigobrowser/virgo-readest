@@ -2734,8 +2734,6 @@
   "{{count}} now Mastered_other": "{{count}} kelime artık “Öğrenildi”",
   "Sync with Anki": "Anki ile senkronize et",
   "Import Anki Deck...": "Anki destesini içe aktar...",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "In sync with Anki": "Anki ile senkronize",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Grimmory Senkronizasyonu",
@@ -2829,10 +2827,4 @@
   "Reset Counts": "Sayaçları Sıfırla",
   "Reset the counts and sync history on this device?": "Bu cihazdaki sayaçlar ve eşitleme geçmişi sıfırlansın mı?",
   "Folder not available": "Klasör kullanılamıyor"
-=======
-  "In sync with Anki": "Anki ile senkronize"
->>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
-=======
-  "In sync with Anki": "Anki ile senkronize"
->>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }

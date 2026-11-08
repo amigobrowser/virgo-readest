@@ -2734,8 +2734,6 @@
   "{{count}} now Mastered_other": "{{count}} τώρα «Κατακτημένη»",
   "Sync with Anki": "Συγχρονισμός με το Anki",
   "Import Anki Deck...": "Εισαγωγή τράπουλας Anki...",
-<<<<<<< HEAD
-<<<<<<< HEAD
   "In sync with Anki": "Συγχρονισμένο με το Anki",
   "Grimmory": "Grimmory",
   "Grimmory Sync": "Συγχρονισμός Grimmory",
@@ -2829,10 +2827,4 @@
   "Reset Counts": "Επαναφορά μετρητών",
   "Reset the counts and sync history on this device?": "Επαναφορά των μετρητών και του ιστορικού συγχρονισμού σε αυτήν τη συσκευή;",
   "Folder not available": "Ο φάκελος δεν είναι διαθέσιμος"
-=======
-  "In sync with Anki": "Συγχρονισμένο με το Anki"
->>>>>>> 7fa58028f (feat(vocabulary): sync with Anki on Android (#7328))
-=======
-  "In sync with Anki": "Συγχρονισμένο με το Anki"
->>>>>>> 9d858cf0d (feat(vocabulary): sync with Anki on Android (#7328))
 }
