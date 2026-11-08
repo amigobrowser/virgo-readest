@@ -1363,10 +1363,8 @@ const LibraryPageContent = ({ searchParams }: { searchParams: ReadonlyURLSearchP
     setIsSelectMode(false);
     console.log('Importing books from files...');
     if (appService?.isAndroidApp) {
-      // The dialog plugin's promise dies when Android tears down the activity
-      // or process while the picker is in the foreground (#1217). Open the
-      // native-bridge picker fire-and-forget instead; results arrive through
-      // the replayable `file-picker-result` event consumed below.
+      // Selected books arrive through the replayable `file-picker-result`
+      // event consumed below.
       showFilePicker().catch((err) => console.error('Failed to open file picker:', err));
       return;
     }

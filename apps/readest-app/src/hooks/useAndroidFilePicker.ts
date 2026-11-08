@@ -17,18 +17,13 @@ interface FilePickerResultPayload {
 /**
  * Consume book files picked through the native-bridge file picker on Android.
  *
- * The Tauri dialog plugin's picker resolves a JS promise with the result, but
- * that promise dies whenever Android tears down the activity or process while
- * the system picker is in the foreground (low-RAM devices, FireOS — #1217).
- * The native-bridge picker instead delivers results as a `file-picker-result`
- * plugin event routed through the same pending-event queue as shared intents:
- * results emitted before this listener registers (cold start after a process
- * kill) are queued in Kotlin and replayed once the listener lands, so a pick
- * survives any WebView reload in between.
+ * The native-bridge picker delivers results as a `file-picker-result` plugin
+ * event routed through the pending-event queue, so results emitted before this
+ * listener registers are replayed once the listener lands.
  *
  * Mount this wherever picked books can be imported (the library page). The
- * picker itself is opened fire-and-forget via `showFilePicker()` in
- * `utils/bridge`; cancellation simply emits nothing.
+ * picker is opened via `showFilePicker()` in `utils/bridge`; cancellation
+ * simply emits nothing.
  */
 export function useAndroidPickedBooks(
   appService: AppService | null,

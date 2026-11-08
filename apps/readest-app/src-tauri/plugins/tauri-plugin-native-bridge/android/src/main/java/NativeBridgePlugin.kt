@@ -52,9 +52,9 @@ import androidx.core.content.FileProvider
 import androidx.core.content.ContextCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import androidx.activity.result.ActivityResultLauncher
-import androidx.activity.result.contract.ActivityResultContracts
+import androidx.activity.result.ActivityResult
 import androidx.browser.customtabs.CustomTabsIntent
+import app.tauri.annotation.ActivityCallback
 import app.tauri.annotation.Command
 import app.tauri.annotation.InvokeArg
 import app.tauri.annotation.Permission
@@ -389,15 +389,9 @@ class NativeBridgePlugin(private val activity: Activity): Plugin(activity) {
         private const val GAMEPAD_CONNECTION_EVENT = "gamepad-connection"
         private const val REQUEST_MANAGE_STORAGE = 1001
         private const val FOLDER_PICKER_REQUEST_CODE = 1002
-        private const val FILE_PICKER_REQUEST_CODE = 1003
         var pendingInvoke: Invoke? = null
         private var pendingAuthCallbackTarget: OAuthCallbackTarget? = null
         var pendingFolderPickerInvoke: Invoke? = null
-        // A file-picker result can be delivered to a MainActivity that was
-        // recreated after the process died behind the system picker (#1217).
-        // onActivityResult then fires before Tauri has instantiated this
-        // plugin, so the raw Intent is stashed here and drained in load().
-        private var pendingFilePickerData: Intent? = null
         private var instance: NativeBridgePlugin? = null
         fun getInstance(): NativeBridgePlugin? = instance
 
@@ -406,15 +400,6 @@ class NativeBridgePlugin(private val activity: Activity): Plugin(activity) {
             instance?.triggerEvent("bookshelf-widget-configured", JSObject())
         }
 
-        fun deliverActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-            val plugin = instance
-            if (plugin != null) {
-                plugin.handleActivityResult(requestCode, resultCode, data)
-            } else if (requestCode == FILE_PICKER_REQUEST_CODE &&
-                resultCode == Activity.RESULT_OK && data != null) {
-                pendingFilePickerData = data
-            }
-        }
     }
 
     override fun load(webView: WebView) {
@@ -427,10 +412,6 @@ class NativeBridgePlugin(private val activity: Activity): Plugin(activity) {
         inputManager?.registerInputDeviceListener(gamepadInputListener, null)
         activity.application.registerActivityLifecycleCallbacks(lifecycleCallbacks)
         handleIntent(activity.intent)
-        pendingFilePickerData?.let { data ->
-            pendingFilePickerData = null
-            emitFilePickerResult(data)
-        }
     }
 
     override fun onNewIntent(intent: Intent) {
@@ -1441,11 +1422,18 @@ class NativeBridgePlugin(private val activity: Activity): Plugin(activity) {
                 type = "*/*"
                 putExtra(Intent.EXTRA_ALLOW_MULTIPLE, true)
             }
-            activity.startActivityForResult(intent, FILE_PICKER_REQUEST_CODE)
-            invoke.resolve()
+            startActivityForResult(invoke, intent, "onFilePickerResult")
         } catch (e: Exception) {
             invoke.reject("Failed to open file picker: ${e.message}")
         }
+    }
+
+    @ActivityCallback
+    fun onFilePickerResult(invoke: Invoke, result: ActivityResult) {
+        if (result.resultCode == Activity.RESULT_OK) {
+            result.data?.let(::emitFilePickerResult)
+        }
+        invoke.resolve()
     }
 
     private fun emitFilePickerResult(data: Intent) {
@@ -1494,10 +1482,6 @@ class NativeBridgePlugin(private val activity: Activity): Plugin(activity) {
             if (invoke != null) {
                 handleDirectorySelected(data?.data, invoke)
                 pendingFolderPickerInvoke = null
-            }
-        } else if (requestCode == FILE_PICKER_REQUEST_CODE) {
-            if (resultCode == Activity.RESULT_OK && data != null) {
-                emitFilePickerResult(data)
             }
         }
     }
